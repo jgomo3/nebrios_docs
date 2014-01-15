@@ -1,8 +1,7 @@
-                    Nebri OS Guide
+Nebri OS Guide
 ==============
 
 Documentation to help you quickly setup Nebri OS for your organization.
- Or check out the `Step-by-Step Tutorial! </tutorial>`_
 
 Overview
 --------
@@ -31,7 +30,7 @@ A few things to note about scripts:
 -  As long as your script is listening to something that changes, and it's check is True, it will run.
 -  Scripts don't call or reference other Nebri OS scripts, but events trigger them.
 
-.. figure:: img/content/nebri_editor.jpg
+.. figure:: img/nebri_editor.jpg
    :align: center
    :alt: 
 
@@ -211,7 +210,7 @@ Using the Admin
 
 The admin website allows you to write scripts, monitor KVPs, understand what processes have been started (and why), set permissions for users, and many other things. You might be looking for a graphical overview of a process, like a BPMN representation with bubbles grayed out that have already been executed. That type of view does not exist, and cannot exist, since processes aren't technically defined in any one place. With the advent of Process Contracts, and Event Based scripting, power lies by creating assurance from various angles. It's a visibility vs. assurance issue.
 
-.. figure:: img/content/nebri_dashboard.jpg
+.. figure:: img/nebri_dashboard.jpg
    :align: center
    :alt: 
 
@@ -228,7 +227,7 @@ Even when you are working with forms it's great to keep the debug window open. I
 
 This is where you can define who can access which KVPs on your system. When a user is disallowed from viewing a KVP, it will not show up in any email or communication to them. Nor will they have access to modify it. An example of an ACL setting is to protect employees from seeing the pay\_rate of a new hire.
 
-.. figure:: img/content/nebri_acl.jpg
+.. figure:: img/nebri_acl.jpg
    :align: center
    :alt: 
 
@@ -437,6 +436,6 @@ Are there times you want to interact with large amount of users, but without the
 
 What's surprising is that you don't actually create a public form. Anyone is able to reach any form on your Nebri instance, in essence, but of course nothing would come up unless you had allowed it in your ACL. That means, in order to make a form public, you must make the ACL on the KVP's inside the form accessible to the public. **Just send anyone a link to your form. If the ACL allows, that's it!**
 
-.. |image0| image:: img/content/nebri_debug.jpg
+.. |image0| image:: img/nebri_debug.jpg
                     
 
