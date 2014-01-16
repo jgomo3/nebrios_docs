@@ -20,8 +20,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinxcontrib.httpdomain',
-    'sphinxcontrib.autohttp.flask',
 ]
 
 modindex_common_prefix = ['nebrios.']
