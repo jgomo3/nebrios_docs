@@ -1,17 +1,23 @@
-Writing Nebry Scripts
-=====================
+Checking
+~~~~~~~~
 
-A few things to note about scripts:
+The check feature allows you to set parameters that must be met in order to run. Since scripts are naturally hungry, they want to run any time their watched KVP has been created or changed. The check feature introduces a load of power. For instance, only run the "order" command if the bank account is high enough. We are supposing your system is tied into Nebri OS, and the bank balance is available to it.
 
--  Scripts must be called into action through a KVP change in the system. They don't act otherwise.
--  As long as your script is listening to something that changes, and it's check is True, it will run.
--  Scripts don't call or reference other Nebri OS scripts, but events trigger them.
+Script only gets to check() if this changes
 
-.. figure:: img/nebri_editor.jpg
-   :align: center
-   :alt: 
+Script only fires if check passes
 
-This section will provide an overview of how to write Nebri Scripts.
- **If you would a more detailed step-by-step tutorial on writing Nebri Scipts, `read more here! </tutorial>`_**
+::
 
+    def check(self):
+        return bank_balance > order_total
+                  
+
+"return" is a Python feature. It's the final output of check(). In this case, it's going to return a True if bank\_balance is greater than the order\_total.
+
+You can run anything in this function. We don't recommend changing data during a check(), since that is considered breaking command-query separation.
+
+Since this is pure Python, you can easily query some outside service and use that in your arguments. An example might be weather temperature or status of a file transfer. It's Python!
+
+**Read more: `Writing Scripts - Check Method </tutorial#check_method>`_**
 

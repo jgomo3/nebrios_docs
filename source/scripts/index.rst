@@ -27,52 +27,7 @@ Everything inside of a script can be categeorized in three groups; Registration,
 
 
 
-Checking
-~~~~~~~~
 
-The check feature allows you to set parameters that must be met in order to run. Since scripts are naturally hungry, they want to run any time their watched KVP has been created or changed. The check feature introduces a load of power. For instance, only run the "order" command if the bank account is high enough. We are supposing your system is tied into Nebri OS, and the bank balance is available to it.
-
-Script only gets to check() if this changes
-
-Script only fires if check passes
-
-::
-
-    def check(self):
-        return bank_balance > order_total
-                  
-
-"return" is a Python feature. It's the final output of check(). In this case, it's going to return a True if bank\_balance is greater than the order\_total.
-
-You can run anything in this function. We don't recommend changing data during a check(), since that is considered breaking command-query separation.
-
-Since this is pure Python, you can easily query some outside service and use that in your arguments. An example might be weather temperature or status of a file transfer. It's Python!
-
-**Read more: `Writing Scripts - Check Method </tutorial#check_method>`_**
-
-Executing
-~~~~~~~~~
-
-Anything under the action() function gets executed IF the script is woken up (based on what it listens\_to), AND the check() has returned as True. There is where emails are sent, logic is evaluated, APIs are called, other KVPs are set.
-
-Send an email to anybody
-
-Changing a KVP
-
-Example gtalk plugin
-
-::
-
-    def action(self):
-        send_email("email", """message""")
-        self.vacation_status == "Finished"
-        gtalk.send("recipient", """message""")
-                  
-
-Once you have a listens\_to, check() and an action(), you have the general body of a script.
- Check out the `Demo <demo>`_ for some script examples!
-
-**Read more: `Writing Scripts - Action Method </tutorial#action_method>`_**
 
 Process Contracts
 ~~~~~~~~~~~~~~~~~

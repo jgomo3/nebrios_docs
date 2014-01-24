@@ -1,17 +1,24 @@
-Writing Nebry Scripts
-=====================
+Executing
+~~~~~~~~~
 
-A few things to note about scripts:
+Anything under the action() function gets executed IF the script is woken up (based on what it listens\_to), AND the check() has returned as True. There is where emails are sent, logic is evaluated, APIs are called, other KVPs are set.
 
--  Scripts must be called into action through a KVP change in the system. They don't act otherwise.
--  As long as your script is listening to something that changes, and it's check is True, it will run.
--  Scripts don't call or reference other Nebri OS scripts, but events trigger them.
+Send an email to anybody
 
-.. figure:: img/nebri_editor.jpg
-   :align: center
-   :alt: 
+Changing a KVP
 
-This section will provide an overview of how to write Nebri Scripts.
- **If you would a more detailed step-by-step tutorial on writing Nebri Scipts, `read more here! </tutorial>`_**
+Example gtalk plugin
 
+::
+
+    def action(self):
+        send_email("email", """message""")
+        self.vacation_status == "Finished"
+        gtalk.send("recipient", """message""")
+                  
+
+Once you have a listens\_to, check() and an action(), you have the general body of a script.
+ Check out the `Demo <demo>`_ for some script examples!
+
+**Read more: `Writing Scripts - Action Method </tutorial#action_method>`_**
 
