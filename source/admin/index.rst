@@ -4,7 +4,7 @@ Using the Admin
 
 The admin website allows you to write scripts, monitor KVPs, understand what processes have been started (and why), set permissions for users, and many other things. You might be looking for a graphical overview of a process, like a BPMN representation with bubbles grayed out that have already been executed. That type of view does not exist, and cannot exist, since processes aren't technically defined in any one place. With the advent of Process Contracts, and Event Based scripting, power lies by creating assurance from various angles. It's a visibility vs. assurance issue.
 
-.. figure:: img/nebri_dashboard.jpg
+.. figure:: /img/nebri_dashboard.jpg
    :align: center
    :alt: 
 
@@ -17,11 +17,11 @@ The Email window basically spoofs an email client. You can quickly send in KVPs 
 
 Even when you are working with forms it's great to keep the debug window open. It will tell you when a script fired, if the check() passed or not, what KVP's got modified as a result, and other things.
 
-|image0| Access Control List (ACL)
+Access Control List (ACL)
 
 This is where you can define who can access which KVPs on your system. When a user is disallowed from viewing a KVP, it will not show up in any email or communication to them. Nor will they have access to modify it. An example of an ACL setting is to protect employees from seeing the pay\_rate of a new hire.
 
-.. figure:: img/nebri_acl.jpg
+.. figure:: /img/nebri_acl.jpg
    :align: center
    :alt: 
 

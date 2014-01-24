@@ -27,23 +27,40 @@ using the admin
 ---------------
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     
-    admin/admin
+    admin/index
 
 Writing Scripts
 ---------------
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     
     scripts/index
+
+Library
+-------
+
+.. toctree::
+    :maxdepth: 1
+    
+    library/index
+
+Email Integration
+-----------------
+Learn how to instantly get full adoption by interacting with the inbox.
+
+.. toctree::
+    :maxdepth: 1
+    
+    email/index
 
 
 Forms
 -----
 
-Forms a gernerally the fastest way to interact with NebriOS. With very simple scripts you can create forms that allow users in your system to accuratly submit and interact with a large ammount of information. It's also likely that you want to create a form for users outside your system, a survey perhaps, which is also possible. Those are called public forms. Let's see what a form looks like.
+Forms are gernerally the fastest way to interact with NebriOS. With very simple scripts you can create forms that allow users in your system to accuratly submit and interact with a large ammount of information. It's also likely that you want to create a form for users outside your system, a survey perhaps, which is also possible. Those are called public forms. Let's see what a form looks like.
 
 Here's an `example form <https://demo.nebrios.com/interact/hello_form>`_ and here's the `code <https://scripts.nebrios.com/adamnebbs/demo-form-with-every-option/>`_ it took to produce it.
 
