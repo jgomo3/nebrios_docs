@@ -11,7 +11,7 @@ Various builtin functions and methods that help you write better scripts.
     required
     schedule
     instances_within_process
-    instances_started_time
+    instances_within_system
     process_started_time
 
 

@@ -24,15 +24,3 @@ Everything inside of a script can be categeorized in three groups; Registration,
     check
     action
 
-
-
-
-
-
-
-Scripting Reference
--------------------
-
-
-
-
