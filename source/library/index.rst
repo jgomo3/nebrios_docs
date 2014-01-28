@@ -8,7 +8,6 @@ Various builtin functions and methods that help you write better scripts.
     :maxdepth: 2
     
     send_email
-    required
     schedule
     instances_within_process
     instances_within_system

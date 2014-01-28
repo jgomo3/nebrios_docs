@@ -1,9 +1,11 @@
-required()
-~~~~~~~~~~
+Required
+========
 
-This feature allows you to define in a script certain KVP values which **must** be available to the script before it continues forward. An example would be a list of paperwork. Each item must be inputted into the system before the script moves forward.
+.. note:: This feature has been depreciated. We are moving towards pre-save KVP actions more like DBC on a class or function.
 
-If the required KVPs aren't there when the script executes, it sends an email back to the last actor telling them they missed certain information.
+If you don't want a script to trigger from imporporly filled out KVP's use required. This is useful when your workflow needs values turned in at the same time. Maybe you don't want a first name without a last name. Rather than creating an additional script to catch theses mis-directions, just use required:
 
-**Read more: `Writing Scripts - Required </tutorial#required>`_**
+    required = [('first', 'last')]
+
+A message will be sent to the user if they have submitted the values that break the required rule. If the interaction is via email, it will come as an email. Otherwise it will be returned as a message in the Nebri interactive mode.
 

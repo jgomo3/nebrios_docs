@@ -20,5 +20,6 @@ Example gtalk plugin
 Once you have a listens\_to, check() and an action(), you have the general body of a script.
  Check out the `Demo <demo>`_ for some script examples!
 
-**Read more: `Writing Scripts - Action Method </tutorial#action_method>`_**
+
+:doc:`../library/send_email`
 
