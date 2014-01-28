@@ -22,9 +22,10 @@ Listening to multiple KVPs looks like this:
 
 If any one of those KVPs were to change, the script would wake up.
 
-**Note:**\ You can listen to every single KVP system wide by using \* instead of a text value.
+.. note:: You can listen to every single KVP system wide by using \* instead of a text value.
 
-**Read more: `Writing Scripts - Registration </tutorial#registration>`_**
+Schedule
+========
 
-
+An extremely useful alternative to listens_to is `schedule[]`. You can define when the script wakes up and acts. This is useful in a monitoring situation. For example, every night you want to make sure doors are shut, or nothing is overdue. It's an alighnment tool. See   :doc:`../library/schedule`
 
