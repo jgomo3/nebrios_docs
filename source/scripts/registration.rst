@@ -1,5 +1,11 @@
+************
+Registration
+************
+
+The following parts should be found at the top of your script, and they comprise the "registration" of the script.
+
 Listening
-~~~~~~~~~
+=========
 
 Since Nebri OS scripts don't ever execute by being called directly, you will need to specify what KVPs in the system, when created or changed, will trigger the script. This is done by using the listens\_to list. It can contain any number of KVPs to watch. Usually other scripts, forms, API's or incoming emails will change KVPs, and thus trigger your script.
 
