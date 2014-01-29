@@ -8,15 +8,22 @@ Forms
 
 Forms are generally the fastest way to interact with NebriOS. With very simple scripts you can create forms that allow users in your system to accurately submit and interact with a large amount of information. It's also likely that you want to create a form for users outside your system, a survey perhaps, which is also possible. Those are called public forms. Let's see what a form looks like.
 
-Here's an `example form <https://demo.nebrios.com/interact/hello_form>`_ and here's the `code <https://scripts.nebrios.com/adamnebbs/demo-form-with-every-option/>`_ it took to produce it.
+Here's an `example form <https://demo.nebrios.com/interact/hello_form>`_ and here's the `code <https://scripts.nebrios.com/adamnebbs/demo-form-with-every-option/>`_ it took to produce it. The following is a typical form that we use internally:
 
-Forms are written in the forms area that you can find in the left navigation. An minimal form might look like this:
+.. image:: /img/nebri_task_form.jpg
+
+An minimal form might look like this:
 
 ::
 
     class my_form(Form):
         first_name = String()
         age = Number()
+
+And would render the following form:
+
+
+.. image:: /img/nebri_my_form.jpg
 
 Available Options
 ~~~~~~~~~~~~~~~~~
@@ -94,7 +101,7 @@ Public Forms
 
 Are there times you want to interact with large amount of users, but without them being an official user in your system? Think about a survey, or ordering something off a menu. These users don't need access to your system, and they will not be interacting very often with Nebri. It's best to use public forms in this case.
 
-What's surprising is that you don't actually create a public form. Anyone is able to reach any form on your Nebri instance, in essence, but of course nothing would come up unless you had allowed it in your ACL. That means, in order to make a form public, you must make the ACL on the KVP's inside the form accessible to the public. **Just send anyone a link to your form. If the ACL allows, that's it!**
+What's surprising is that you don't actually create a public form. Anyone is able to reach any form on your Nebri instance, in essence, but of course nothing would come up unless you had allowed it in your ACL. That means, in order to make a form public, you must make the ACL on the KVP's inside the form accessible to the public. **Just send anyone a link to your form. If the ACL allows, you have a public form!**
 
 .. image:: /img/nebri_debug.jpg
                     
