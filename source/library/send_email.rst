@@ -1,9 +1,10 @@
+*************
 send\_email()
-~~~~~~~~~~~~~
+*************
 
-::
+.. code-block:: python
 
-     # all params
+    # all params
     send_email(TO,MESSAGE [,SUBJECT,PID,ATTATCH_VARIABLES])
 
     # example
@@ -26,5 +27,15 @@ A very important feature of NebriOS is the ability to send email without any has
     send_email(TO,MESSAGE,SUBJECT, PID)
     # The PID argument allows you to change which PID the KVP's at the bottom of the email gets loaded from.
 
-**to** can contain any number of comma separated email addresses. **message** can contatain anything within tripples quotes, along with being able to pring kvp's using brackets {{like\_this}}. If you don't want to show all the kvp's in the emails, send **attatch\_variables=False**. By default it's set to true.
 
+Parameters
+##########
+
+
+to
+**
+Who are you sending the email to? Can contain any number of comma separated email addresses. Eventually you will be able to use groups and usernames in this field, but not yet.
+
+**message** can contatain anything within tripples quotes, along with being able to pring kvp's using brackets {{like\_this}}. If you don't want to show all the kvp's in the emails, send **attatch\_variables=False**. By default it's set to true.
+
+attactch\_variables
