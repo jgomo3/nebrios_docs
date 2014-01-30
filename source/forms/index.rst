@@ -3,9 +3,6 @@ Forms
 =====
 
 
-.. toctree::
-    :maxdepth:1
-
 Forms are generally the fastest way to interact with NebriOS. With very simple scripts you can create forms that allow users in your system to accurately submit and interact with a large amount of information. It's also likely that you want to create a form for users outside your system, a survey perhaps, which is also possible. Those are called public forms. Let's see what a form looks like.
 
 Here's an `example form <https://demo.nebrios.com/interact/hello_form>`_ and here's the `code <https://scripts.nebrios.com/adamnebbs/demo-form-with-every-option/>`_ it took to produce it. The following is a typical form that we use internally:
@@ -26,7 +23,7 @@ And would render the following form:
 .. image:: /img/nebri_my_form.jpg
 
 Available Options
-~~~~~~~~~~~~~~~~~
+=================
 
 Here's another example form with inline comments. You can copy the script into your environment to see what it will look like, or `see it live <https://demo.nebrios.com/interact/explainer_form>`_ right now.
 
@@ -90,20 +87,19 @@ Here's another example form with inline comments. You can copy the script into y
       
 
 Accessing Forms
-~~~~~~~~~~~~~~
+===============
 
 There are two ways to show a form: You can click on a link from anywhere like the admin, an email, or a wiki page, or you can bring forms up automatically once a user submits an initial form. This way you can continue to click through forms and experience the flow of the application quickly, dynamically. Any mention of a form in the send\_email() for the user looking at the Interactive page will bring the very same form up in their browser. In other words, a form link will be sent to their inbox, but if they have the Interactive view open in their browser, the form that was passed to them in the email will show up right away.
 
 The syntax for linking a form is **{{forms.example\_form}}** from inside any send\_email message. The email being sent out will render it as a full http link. This method of linking forms will be expanded once load\_form and load\_message features are introduced, but they aren't available to our users yet.
 
 Public Forms
-~~~~~~~~~~~~
+============
 
 Are there times you want to interact with large amount of users, but without them being an official user in your system? Think about a survey, or ordering something off a menu. These users don't need access to your system, and they will not be interacting very often with Nebri. It's best to use public forms in this case.
 
 What's surprising is that you don't actually create a public form. Anyone is able to reach any form on your Nebri instance, in essence, but of course nothing would come up unless you had allowed it in your ACL. That means, in order to make a form public, you must make the ACL on the KVP's inside the form accessible to the public. **Just send anyone a link to your form. If the ACL allows, you have a public form!**. See :doc:`../admin/acl`. 
 
-.. image:: /img/nebri_debug.jpg
                     
  
     
