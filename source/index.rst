@@ -27,14 +27,12 @@ It takes a little while to wrap your mind around it, because tasks/scripts inter
 .. toctree::
     :maxdepth: 2
     
-    admin/index
-
+    scripts/index
 
 .. toctree::
     :maxdepth: 2
     
-    scripts/index
-
+    admin/index
 
 .. toctree::
     :maxdepth: 2
@@ -50,4 +48,3 @@ It takes a little while to wrap your mind around it, because tasks/scripts inter
     :maxdepth: 2
 
     forms/index
- 
