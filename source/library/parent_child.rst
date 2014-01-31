@@ -7,12 +7,28 @@ What if you want to spawn a new PID from an existing PID? For example, you have 
     
     new_child.clean_freezer == True
 
-You will have the ability to communicate with that child process also. Maybe you want to know the status of it, but not depend on the status of it. 
+The child process is now in the ether, if you will. It will go on it's merry way and accomplish what its designed to. It acts like any other process at this point. The parent process can disappear all together without effecting spawned processes. 
+
+You also have the ability to communicate with that child process. Maybe you want to know the status of it? 
 
 ::
+    ...
+
+    listens_to = ['child.clean_freezer']
+
+    ...
     
     def check(self):
         return child.clean_freezer == "Done"
 
     def action(self):
         # notify boss: ok to book a restaurant tour
+
+In the same way, children can monitor their parents:
+    
+:: 
+
+    listens_to = ['parent.example']
+
+.. todo:: Write about children
+

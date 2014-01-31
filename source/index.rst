@@ -2,27 +2,19 @@
 Nebri OS Guide
 ==============
 
-Documentation to help you quickly setup Nebri OS.
+.. topic:: Be Like Water My Friend
 
-Overview
---------
+Nebri is all about the flow between software and humans.  Where software is lacking, Nebri steps in with a minimal UI and a powerful workflow based on rules. It's a paradigm changing approach. Some bullet points to kickstart your project:
 
-Scripts, KVPs, Forms and the Inbox. These are the major pieces of Nebri OS. Scripts are authored through a text editor in the admin area. Adding just a few commands to a Python script inside the Nebri OS environment allows you to create powerful "processes" quickly. Nebri OS is different, and here are a few bullet points to summarize:
+-  A KVP (Key Value Pair) is the cornerstone data entity. Nebri only reacts KVP changes.
+-  Nebri's reaction is based on Python scripts. How would you like to react to the changed KVP?
+-  These scripts listen to specific KVP's and only trigger if specific conditions are met.
+-  Nebri can control anything with an API.
+-  Human interaction is accomplished through snazzy little forms, on any device.
 
--  As long as your script is listening to something that changes, and it's check is True, it will run.
--  Think in terms of principles and rules rather that the flow
--  Scripts are called into action through a KVP change in the system.
--  Users interface through their inbox, online forms, or other software hooked up to Nebri.
--  Scripts don't call other Nebri OS scripts. They only run when an event happens.
--  Because of this logical power, BPA, Contracts, CEP and others happen naturally.
+The task of coordinating human action has been traditionally accomplished through BPM or custom software. Doing that and coordinating between various software services was done in dark rooms where results were rarely shown and puppies were sacrificed.
 
-The power that the Nebri OS paradigm provides is extreme, but it's important to understand some of the main features of the tool before moving on. Traditional BPM systems revolve around a process, while Nebri OS revolves around scripts that react to events. Think about an army of minions, each with a single role of operation and single assignment.
-
-A traditional BPMN process can be replaced with a set of scripts. The power is that you don't need a predefined process, you just need to understand a nugget of functionality that you want: When the warehouse stock falls below 100, email this person, and setup an order.
-
-It takes a little while to wrap your mind around it, because tasks/scripts interact with the environment, not a process or other Nebri OS scripts. One problem that we solved by taking this angle is that we never have a problem communicating across various processes in action since it's just the environment. This paradigm allows you to modify "processes" on the fly with zero side effects, and build your library of scripts up organically.
-
-
+This tools was created to help engineers take over the world. 
 
 .. toctree::
     :maxdepth: 2

@@ -52,10 +52,4 @@ attactch\_variables
 subject
 *******
     
-    You can override the subject line of any email, otherwise, it will just have the PID of the email. However, doing this removes the pid of the email. You can place the PID alongside your message to get over this shortcoming by using the process_id=PID argument: 
-
-::
-    
-   send_email(["recipient@domain.com"],subject="some subject", process_id=PID) 
-
-    
+    You can override the subject line of any email, otherwise, it will just have the PID of the email. However, doing this removes the pid of the email. See the example above for overcoming this issue.    
