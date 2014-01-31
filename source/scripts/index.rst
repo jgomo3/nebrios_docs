@@ -20,4 +20,5 @@ Everything inside of a script can be categeorized in three groups; Registration 
     registration
     check
     action
+    parent_child
 

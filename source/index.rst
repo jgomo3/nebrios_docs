@@ -2,7 +2,7 @@
 Nebri OS Guide
 ==============
 
-.. topic:: Be Like Water My Friend
+  *Be Like Water My Friend*
 
 Nebri is all about the flow between software and humans.  Where software is lacking, Nebri steps in with a minimal UI and a powerful workflow based on rules. It's a paradigm changing approach. Some bullet points to kickstart your project:
 
