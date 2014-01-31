@@ -35,8 +35,8 @@ In the same way, children can monitor their parents:
 
 Full reference for the Parent/Child tools:
 
-:doc:`../library/parent`
-:doc:`../library/new_child`
-:doc:`../library/child`
-:doc:`../library/children`
+* :doc:`../library/parent`
+* :doc:`../library/new_child`
+* :doc:`../library/child`
+* :doc:`../library/children`
 

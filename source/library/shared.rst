@@ -8,4 +8,4 @@ Want to create a KVP that is globally accessible to any PID? Here's how to creat
 
     shared.example_kvp == "foo" 
 
-Instead of using *self*, you use *shared*. 
+Instead of using *self*, you use *shared*.
