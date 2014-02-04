@@ -89,9 +89,17 @@ Here's another example form with inline comments. You can copy the script into y
 Accessing Forms
 ===============
 
-There are two ways to show a form: You can click on a link from anywhere like the admin, an email, or a wiki page, or you can bring forms up automatically once a user submits an initial form. This way you can continue to click through forms and experience the flow of the application quickly, dynamically. Any mention of a form in the send\_email() for the user looking at the Interactive page will bring the very same form up in their browser. In other words, a form link will be sent to their inbox, but if they have the Interactive view open in their browser, the form that was passed to them in the email will show up right away.
+There are a few ways forms show up: 
 
-The syntax for linking a form is **{{forms.example\_form}}** from inside any send\_email message. The email being sent out will render it as a full http link. This method of linking forms will be expanded once load\_form and load\_message features are introduced, but they aren't available to our users yet.
+You can click on a link from anywhere like the admin, an email, or a wiki page, or you can bring forms up automatically once a user submits an initial form. This way you can continue to click through forms and experience the flow of the application quickly, dynamically. Any mention of a form in the :doc:`../library/send_email` for the user looking at the Interactive page will bring the very same form up in their browser. In other words, a form link will be sent to their inbox, but if they have the Interactive view open in their browser, the form that was passed to them in the email will show up right away.
+
+Syntax from inside send_email:
+
+::
+
+    {{forms.example_form}}
+
+Also, the email will still be sent out, and it will render the form as a full http link. This method of linking forms will be expanded once load\_form and load\_message features are introduced. Sit tight!
 
 Public Forms
 ============
