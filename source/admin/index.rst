@@ -10,6 +10,7 @@ The admin website allows you to write scripts and forms, monitor KVPs, understan
 
 .. toctree::
     :glob: 
+    :maxdepth: 1
 
     *
 

@@ -4,7 +4,7 @@ Nebri OS Guide
 
   *Be Like Water My Friend*
 
-Nebri is all about the flow between software and humans.  Where software is lacking, Nebri steps in with a minimal UI and a powerful workflow based on rules. It's a paradigm changing approach. Some bullet points to kickstart your project:
+Nebri is all about the flow of information. It can be between software, people, and anything with an API.  When you need to connect the dots between various agents, Nebri steps in with a minimal UI and a powerful workflow based on rules. It's a paradigm changing approach. Some bullet points to kickstart your project:
 
 -  A KVP (Key Value Pair) is the cornerstone data entity. Nebri only reacts KVP changes.
 -  Nebri's reaction is based on Python scripts. How would you like to react to the changed KVP?
