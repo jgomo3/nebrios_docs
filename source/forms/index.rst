@@ -108,6 +108,14 @@ Are there times you want to interact with large amount of users, but without the
 
 What's surprising is that you don't actually create a public form. Anyone is able to reach any form on your Nebri instance, in essence, but of course nothing would come up unless you had allowed it in your ACL. That means, in order to make a form public, you must make the ACL on the KVP's inside the form accessible to the public. **Just send anyone a link to your form. If the ACL allows, you have a public form!**. See :doc:`../admin/acl`. 
 
+
+Understanding Context
+=====================
+
+If you click on link to a form from the admin, you will be creating a new PID, as apposed to having a form brought up for you within a processes already in motion. 
+
+Links to forms, especially from outside of Nebri, might have an associated PID encoded in the URL. For example in a form link from an email. If it doesn't have any PID in the url, it will create a new PID once info is submitted through it.
+
                     
  
     
