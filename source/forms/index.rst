@@ -62,7 +62,7 @@ Here's another example form with inline comments. You can copy the script into y
 
 
         # some fields are very important, so mark them as required.
-        you_are_alive = Boolean(required=True)
+        you_are_alive = Boolean()
 
         # bools can be dropdowns also
         bool_drop_down = Boolean(initial=False, dropdown=True)
