@@ -116,6 +116,16 @@ If you click on link to a form from the admin, you will be creating a new PID, a
 
 Links to forms, especially from outside of Nebri, might have an associated PID encoded in the URL. For example in a form link from an email. If it doesn't have any PID in the url, it will create a new PID once info is submitted through it.
 
+
+PID Argument
+============
+
+Some form links will show up with a PID encoded in the URL. In case you want to use this handy feature yourself, the syntax goes like this:
+
+::
+
+   https://example.nebrios.com/interact/form_name?pid=<PID> 
+
                     
  
     
