@@ -14,15 +14,19 @@ Since shared data isn't necessarily initiated from the PID you are standing in, 
 
 :: 
 
-        if shared.idle_dev_number:
-            shared.idle_dev_number -= 1
+    if shared.idle_dev_number:
+        shared.idle_dev_number -= 1
 
 Also you can treat it differently if it doesn't exist:
 
 :: 
 
-        if shared.idle_dev_number:
-            shared.idle_dev_number -= 1
-        else:
-            shared.idle_dev_number = 0
+    if shared.idle_dev_number:
+        shared.idle_dev_number -= 1
+    else:
+        shared.idle_dev_number = 0
+
+Shared KVP's can be used in :doc:`../scripts/registration`, as a listen_to. This way you can watch global data just like a regular KVP. 
+
+Additionally :doc:`lists` can be used inside of shared KVP's for even more power. 
 
