@@ -40,3 +40,9 @@ This tools was created to help engineers take over the world.
     :maxdepth: 2
 
     forms/index
+
+
+.. toctree::
+    :maxdepth: 2
+
+    misc/index
