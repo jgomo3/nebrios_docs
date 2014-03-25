@@ -7,7 +7,7 @@ In order to do this you must call new_child and give it a kvp. Instead of using 
 
 ::
     
-    new_child.example_kvp
+    new_child.example_kvp = True
 
 This would create *example_kvp* with a PID of 2. That KVP is fully stand alone, fully KVP.  The difference is that the PID 2 (in this example) stores information about who its parent is. 
 
@@ -19,25 +19,25 @@ You can put any amount of new_children calls in a script. All those children KVP
 
 ::
 
-    new_child.example_kvp
-    new_child.foo
-    new_child.bar
+    new_child.example_kvp = True
+    new_child.foo = "fighters"
+    new_child.bar = 225
 
-... will all spawn under the same PID. Same with this:
+... will all spawn under the same new PID. Same with this:
 
 
 ::
     
-    new_child.example_kvp
+    new_child.example_kvp = True
 
     def some_function()
         pass
 
-    new_child.foo
+    new_child.foo = "fighters"
 
     # MOAR_CODE_HERE!!!
 
-    new_child.bar
+    new_child.bar = 225
 
 If you want to create new KVP's under multiple new PID's, the script that is calling new_child must be woken up for each new PID you want to create.
 
