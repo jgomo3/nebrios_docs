@@ -1,7 +1,7 @@
 children
 ========
 
-This method allows you to query all available children a parent has.
+This method allows you to query all available children a parent has. This is imporant since scripts working under a parent's PID cant access just any child KVP. You have to use this *children* command, or listen to the child KVP. 
 
 ::
 
