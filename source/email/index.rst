@@ -1,7 +1,7 @@
 Inbox Interaction
 -----------------
 
-The Inbox is the easiest path to organizational integration. Emails are sent to the system (e.g. acme@nebrios.com) and KVPs extracted and entered. Anything in the format of "foo := bar" will be entered into the system as a KVP. See, each email that is sent into Nebri OS is either A) initializing a process if it didn't exist yet, or B) responding to a process or modifying one already in motion. You will know what process you are interacting with because the Process ID will show up in the subject line. (PID:15) would tell us that PID 15 is the process we are in.
+The Inbox is the easiest path to organizational integration. Emails are sent to the system (e.g. acme@nebrios.com) and from the system (see  :doc:`../library/send_email`). KVP's can be sent into Nebri this way also. Anything in the format of "foo := bar" will be entered into the system as a KVP. See, each email that is sent into Nebri OS is either A) initializing a process if it didn't exist yet, or B) responding to a process or modifying one already in motion. You will know what process you are interacting with because the Process ID will show up in the subject line. (PID:15) would tell us that PID 15 is the process we are in.
 
 To illustrate why this is important, imagine you hire on two new people. They will both have the same type of info, like first\_name, last\_name, pay\_rate for instance. But you need to be able to track information about their status separately. The first hire that you bring on can be activated from an email like this:
 
