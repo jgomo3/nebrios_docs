@@ -37,5 +37,5 @@ In Depth
 
 Checkout these tools to dive further into the possibilities.
 
-:doc:`../library/send_email`
+:doc:`../builtins/send_email`
 

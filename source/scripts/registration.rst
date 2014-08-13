@@ -33,5 +33,5 @@ If any one of those KVPs were to change, the script would wake up.
 Schedule
 ========
 
-An extremely useful alternative to listens_to is :doc:`../library/schedule`. You can define when the script wakes up and acts rather than what it listens to. This is useful in a monitoring situation. For example, every night you want to make sure doors are shut, or nothing is overdue.  
+An extremely useful alternative to listens_to is :doc:`../builtins/schedule`. You can define when the script wakes up and acts rather than what it listens to. This is useful in a monitoring situation. For example, every night you want to make sure doors are shut, or nothing is overdue.  
 

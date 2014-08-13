@@ -29,7 +29,13 @@ This tools was created to help engineers take over the world.
 .. toctree::
     :maxdepth: 2
     
-    library/index
+    builtins/index
+
+.. toctree::
+    :maxdepth: 2
+
+    packages/index
+
 
 .. toctree::
     :maxdepth: 2

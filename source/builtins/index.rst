@@ -1,6 +1,6 @@
-=======
-Library
-=======
+========
+Builtins
+========
 
 Various builtin functions and methods that help you write better scripts. 
 
