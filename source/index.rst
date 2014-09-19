@@ -6,15 +6,11 @@ Nebri OS Guide
 
 Nebri is all about the flow of information. It can be between software, people, and anything with an API.  When you need to connect the dots between various agents, Nebri steps in with a minimal UI and a powerful workflow based on rules. It's a paradigm changing approach. Some bullet points to kickstart your project:
 
--  A KVP (Key Value Pair) is the cornerstone data entity. Nebri only reacts KVP changes.
--  Nebri's reaction is based on Python scripts. How would you like to react to the changed KVP?
--  These scripts listen to specific KVP's and only trigger if specific conditions are met.
--  Nebri can control anything with an API.
--  Human interaction is accomplished through snazzy little forms, on any device.
+-  A KVP (Key Value Pair) is the cornerstone data entity. Think of them as models in MVC.
+-  Nebri's reaction is based on Python scripts(rules). Like a controller.
+-  Results can be seen/changed in your views, which are forms, API's and emails.
 
-The task of coordinating human action has been traditionally accomplished through BPM or custom software. Doing that and coordinating between various software services was done in dark rooms where results were rarely shown and puppies were sacrificed.
-
-This tools was created to help engineers take over the world. 
+Continue reading or you can also checkout a `step by step tutorial <https://nebrios.com/tutorial>`_ first. 
 
 .. toctree::
     :maxdepth: 2
