@@ -5,7 +5,7 @@ Forms
 
 Forms are generally the fastest way to interact with NebriOS. With very simple scripts you can create forms that allow users in your system to accurately submit and interact with a large amount of information. It's also likely that you want to create a form for users outside your system, a survey perhaps, which is also possible. Those are called public forms. Let's see what a form looks like.
 
-Here's an `example form <https://demo.nebrios.com/interact/hello_form>`_ and here's the `code <https://scripts.nebrios.com/adamnebbs/demo-form-with-every-option/>`_ it took to produce it. The following is a typical form that we use internally:
+The following is a typical form that we use internally:
 
 .. image:: /img/nebri_task_form.jpg
 
