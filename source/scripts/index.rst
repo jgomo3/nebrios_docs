@@ -14,7 +14,7 @@ A few things you should know about scripts:
 
 Everything inside of a script can be categeorized in three groups; Registration - what is being listened to inside your system, Check - What conditions must be true before moving forware and Action - if everything checks out, do this.
 
-As for actualy script editing, you can edit them through the admin. However, a much more powerful option is to use an editor like :link:`https://www.jetbrains.com/pycharm/` which connects to your instances via :doc:`../misc/sftp`. 
+As for actualy script editing, you can edit them through the admin. However, a much more powerful option is to use an editor like ` Pycharm <https://www.jetbrains.com/pycharm/>`_ which connects to your instances via :doc:`../misc/sftp`. 
 
 .. toctree::
     :maxdepth: 2
