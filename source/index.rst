@@ -15,7 +15,17 @@ Continue reading or you can also checkout a `step by step tutorial <https://nebr
 .. toctree::
     :maxdepth: 2
     
-    scripts/index
+    rules/index
+
+.. toctree::
+    :maxdepth: 2
+
+    cards/index
+
+.. toctree::
+    :maxdepth: 2
+    
+    api/index
 
 .. toctree::
     :maxdepth: 2
@@ -37,11 +47,6 @@ Continue reading or you can also checkout a `step by step tutorial <https://nebr
     :maxdepth: 2
     
     email/index
-
-.. toctree::
-    :maxdepth: 2
-
-    forms/index
 
 
 .. toctree::

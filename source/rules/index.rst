@@ -1,6 +1,5 @@
-
-Writing Nebri Scripts
-=====================
+Rule Scripts
+============
 
 A few things you should know about scripts:
 
