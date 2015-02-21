@@ -24,7 +24,7 @@ Example card code:
 
 Results in this card:
 
-.. image:: /img/nebri_hello_world.png
+.. image:: /img/hello_world.png
 
 The target defines which route the form fields will be saved by. In this case they hit a default api module which you can see in the API doc. More to come later about Template Cards. 
 
