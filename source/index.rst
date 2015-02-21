@@ -10,7 +10,6 @@ Nebri is all about the flow of information. It can be between software, people, 
 -  Nebri's reaction is based on Python scripts(rules). Like a controller.
 -  Results can be seen/changed in your views, which are forms, API's and emails.
 
-Continue reading or you can also checkout a `step by step tutorial <https://nebrios.com/tutorial>`_ first. 
 
 .. toctree::
     :maxdepth: 2
