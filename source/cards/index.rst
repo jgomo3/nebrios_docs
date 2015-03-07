@@ -29,6 +29,8 @@ Results in this card:
 
 .. image:: /img/hello_world.png
 
+.. note:: All card names must use hyphens instead of underscores. However, they must be referenced with underscores and not hyphens in load_card(). Sucks, we know.
+
 The target defines which route the form fields will be saved by. In this case they hit a default api module which you can see in the API doc. More to come later about Template Cards. The following works inside the ``<template>`` tag. 
 
 
