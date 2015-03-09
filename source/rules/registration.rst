@@ -11,7 +11,7 @@ Since Nebri OS scripts don't ever execute by being called directly, you will nee
 
 This is the listens\_to list.
 
-::
+.. code-block:: python
 
     class my_class_name(NebriOS):
         listens_to == ['some_value']
@@ -21,7 +21,7 @@ This is the listens\_to list.
 
 Listening to multiple KVPs looks like this:
 
-::
+.. code-block:: python
 
     listens_to == ['some_value', 'foo', 'bar']
                   

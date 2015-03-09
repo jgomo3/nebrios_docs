@@ -47,7 +47,7 @@ You can also query any Python script in your environment via Ajax. Example API m
 
 Call this example function from a Polymer card:
 
-::
+.. code-block:: html
 
     <polymer-element name="ajax-math" extends="nebrios-element">
         <template>

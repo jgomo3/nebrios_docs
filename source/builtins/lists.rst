@@ -9,7 +9,7 @@ Lists and Dictionaries are supported inside of KVP's. This way you can store any
 
 In this example we take KVP's and write them to a list and dict for storage:
 
-::
+.. code-block:: python
 
     self.my_list = []
         # first initialize the list

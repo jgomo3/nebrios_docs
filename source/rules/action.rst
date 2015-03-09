@@ -5,14 +5,15 @@ Anything under the action() function gets executed if the script is woken up (ba
 
 Here's a simple action you can execute. Send an email to someone letting them know how to keep the work flow going. 
 
-::
+
+.. code-block:: python
 
     def action(self)
         send_email("arron@example.com", "Please submit the form so I can be done with this!")
 
 You can set KVP's at the same time.
 
-::
+.. code-block:: python
 
     def action(self)
         send_email("arron@example.com", "Please submit the form so I can be done with this!")
@@ -22,7 +23,7 @@ You can set KVP's at the same time.
 
 Example gtalk plugin
 
-::
+.. code-block:: python
 
     def action(self)
         send_email("arron@example.com", "Please submit the form so I can be done with this!")

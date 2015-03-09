@@ -3,7 +3,7 @@ Parent Child Processes
 
 What if you want to spawn a new PID from an existing PID? For example, you have a process in motion that orders new food items when low, but now you want to launch the freezer cleaning process and not have it effect your order process. In this case it's best launch a whole new child process. 
 
-:: 
+.. code-block:: python
 
     # creates a new KVP under a new child PID 
     new_child.clean_freezer == True
@@ -12,7 +12,7 @@ The child process is now in the ether, if you will. It will go on it's merry way
 
 You also have the ability to communicate with that child process. Maybe you want to know the status of it? 
 
-::
+.. code-block:: python
 
     listens_to = ['child.clean_freezer']
         # can listen to children with this notation
@@ -27,7 +27,7 @@ You also have the ability to communicate with that child process. Maybe you want
 
 In the same way, children can monitor their parents:
     
-:: 
+.. code-block:: python
 
     listens_to = ['parent.example']
 

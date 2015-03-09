@@ -4,7 +4,7 @@ child
 
 This built-in allows you to interact with children KVP's that you have spawned from a parent PID. Assuming you are standing in a PID that has children KVP's, this is how you can listen for changes: 
 
-::
+.. code-block:: python
 
     listens_to = ["child.example_kvp"]
 
@@ -14,7 +14,8 @@ This next part gets a little tricky. Since a parent can have multiple children w
 
 First, you can listen to a child KVP. This allows you to modify the KVP inside of that parent script. To put it another way, you can't modify a child KVP without listening to it without a special work around. For example, this will not work:
 
-::
+
+.. code-block:: python
 
     class example(NebriOS):
         listens_to = ["child.example_kvp"]
@@ -28,7 +29,7 @@ First, you can listen to a child KVP. This allows you to modify the KVP inside o
 
 But this works:
 
-::
+.. code-block:: python
 
     class example(NebriOS):
         listens_to = ["child.example_kvp"]

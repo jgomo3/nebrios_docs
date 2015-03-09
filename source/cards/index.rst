@@ -59,7 +59,7 @@ Validation
 ==========
 Looking to validate inputed values before they hit your system? For example, making sure a number is within a range or an email is structured properly. Here's exactly how to do it:
 
-.. code-block:: javascript
+.. code-block:: html
 
     <polymer-element name="qa-form-one" extends="nebrios-form" target="default.save_form">
         <template>
