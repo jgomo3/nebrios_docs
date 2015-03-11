@@ -17,7 +17,7 @@ Example card code:
         <template>
             <h2>Hello World</h2>
             <p>This is an example NebriOS Card.</p>
-            <nebrios-string-field id="testy"></nebrios-string-field>
+            <nebrios-string id="testy"></nebrios-string>
         </template>
         <script>            
             Polymer("hello-world", {

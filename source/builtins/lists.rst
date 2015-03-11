@@ -18,12 +18,12 @@ In this example we take KVP's and write them to a list and dict for storage:
         self.remote_work_days,
         self.date_of_remote_work')
         
-    self.my_dictionary = {}  
-        # initialize it
-        
-    self.my_dictionary.append('user': self.last_actor,
+    self.my_dictionary = {'user': self.last_actor,
       'work_days': self.remote_work_days,
-      'date': self.date_of_remote_work')
+      'date': self.date_of_remote_work'}
+
+    self.my_dictionary["user"] = self.last_actor
+
 
 Lists can be used inside of :doc:`shared` also. For example you might want to have a global list of log times for a certain task so you are able to query it later. Tuples are not supported. 
 
