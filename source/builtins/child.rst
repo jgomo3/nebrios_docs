@@ -8,7 +8,7 @@ This built-in allows you to interact with children KVP's that you have spawned f
 
     listens_to = ["child.example_kvp"]
 
-If the PID you are calling from doesn't have a child, the listen_to will never trigger. See :doc:`../scripts/parent_child`.
+If the PID you are calling from doesn't have a child, the listen_to will never trigger. See :doc:`../rules/parent_child`.
 
 This next part gets a little tricky. Since a parent can have multiple children with the same KVP key, like example_kvp, you can't reference the KVP's exactly the same as regular KVPs. There are two ways to go about modifying children KVPs. 
 

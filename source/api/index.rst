@@ -3,14 +3,21 @@ API Scripts
 ===========
 
 
-You can quickly create endpoints to your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin. The endpoint is named after the script (a `module <https://docs.python.org/2/tutorial/modules.html>`_). For example a module named writer.py is available at **your_instance.nebrios.com/api/writer/**. Consuming API's can happen from these scripts, or another Python script anywhere in the system. Keys are handled from the user table. Let's get into the details!
+You can quickly create endpoints to your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`folder_structure`. The endpoint is named like so:
+
+::
+    api/version/module/function
+
+See Python's `module <https://docs.python.org/2/tutorial/modules.html>`_ documentation. For example a module in your library named form.py with a save() function is available at **your_instance.nebrios.com/api/v1/form/save**. 
+
+Consuming API's can happen from these scripts also, or another Python script anywhere in your system. Keys are handled from the user table. Let's get into the details!
 
 
-As we transition into this new way of programming Nebri, the documentation is still playing catch up. Here's an API script that you can use to bind any form fields to an actual KVP. 
+Here's an API script that you can use to bind any form fields to an actual KVP. 
 
 .. code-block:: python
 
-    def save_form(request):
+    def save(request):
         if request.PROCESS and request.FORM:
             for key, value in request.FORM:
                 request.PROCESS[key] = value
@@ -21,7 +28,7 @@ The following example card would allow you to save any form field within that ca
 
 .. code-block:: html
 
-    <polymer-element name="hello-world" extends="nebrios-form" target="default.save_form">
+    <polymer-element name="hello-world" extends="nebrios-form" target="default.save">
         <template>
             <h2>Hello World</h2>
             <p>This is an example NebriOS Card.</p>
@@ -37,7 +44,7 @@ The following example card would allow you to save any form field within that ca
 AJAX Calls
 ==========
 
-You can also query any Python script in your environment via Ajax. Example API module (named math):
+You can also query any Python script in your environment via Ajax. Example API module (named **math**):
 
 :: 
 

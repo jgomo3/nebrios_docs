@@ -26,7 +26,12 @@ Also you can treat it differently if it doesn't exist:
     else:
         shared.idle_dev_number = 0
 
-Shared KVP's can be used in :doc:`../scripts/registration`, as a listen_to. This way you can watch global data just like a regular KVP. 
+Shared KVP's can be used in :doc:`../rules/registration`, as a listen_to. This way you can watch global data just like a regular KVP. 
 
 Additionally :doc:`lists` can be used inside of shared KVP's for even more power. 
 
+
+Limitations
+-----------
+
+Currently you cannot call shared KVP's from other areas, such as scripts in your libraries and workspace. This is slated to change soon though. 
