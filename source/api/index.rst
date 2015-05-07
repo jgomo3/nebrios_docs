@@ -50,7 +50,7 @@ You can use AJAX from your Polymer cards to run Nebri API modules. This is usefu
 Here is an example API module for grabbing a Shared KVP.
 (Assuming the module name has been set as **shared_lookup**)
 
-::
+.. code-block:: python
 
     def get_company_address(request):
         return shared.company_address
@@ -85,7 +85,7 @@ And here's a Polymer card that calls it. Note that the **auto="true"** attribute
 
 Here is another an example API module for doing some math on the Python side of things:
 
-:: 
+.. code-block:: python
 
     def add(request):
         sum = int(request.POST["a"]) + int(request.POST["b"])
