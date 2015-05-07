@@ -47,8 +47,8 @@ AJAX Calls
 
 You can use AJAX from your Polymer cards to run Nebri API modules. This is useful for grabbing information from within Nebri and displaying it on the fly. For example, an API module can be used to query Shared KVP data needed by the Card. The API module simply needs to "return" whatever information needed.
 
-Here is an example API module for grabbing a Shared KVP:
-(Assuming the module name has been set as "shared_lookup")
+Here is an example API module for grabbing a Shared KVP.
+(Assuming the module name has been set as **shared_lookup**)
 
 ::
 
@@ -60,7 +60,7 @@ And here's a Polymer card that calls it. Note that the **auto="true"** attribute
 
 .. code-block:: html
 
-    <polymer-element name="ajax-math" extends="nebrios-element">
+    <polymer-element name="show-company-name" extends="nebrios-element">
         <template>
             Company Name: {{company_name}}
             
