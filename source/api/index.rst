@@ -45,7 +45,45 @@ The following example card would allow you to save any form field within that ca
 AJAX Calls
 ==========
 
-You can also query any Python script in your environment via Ajax. Example API module (named **math**):
+You can use AJAX from your Polymer cards to run Nebri API modules. This is useful for grabbing information from within Nebri and displaying it on the fly. For example, an API module can be used to query Shared KVP data needed by the Card. The API module simply needs to "return" whatever information needed.
+
+Here is an example API module for grabbing a Shared KVP:
+(Assuming the module name has been set as "shared_lookup")
+
+::
+
+    def get_company_address(request):
+        return shared.company_address
+
+    
+And here's a Polymer card that calls it. Note that the **auto="true"** attribute makes the AJAX call execute immediately without user interaction.
+
+.. code-block:: html
+
+    <polymer-element name="ajax-math" extends="nebrios-element">
+        <template>
+            Company Name: {{company_name}}
+            
+            <nebrios-ajax id="get_company_name" auto="true"
+              url="/api/v1/shared_lookup/get_company_name"
+              on-response="{{ onGetCompanyNameResponse }}">  
+            </nebrios-ajax>
+            
+        </template>
+        <script>
+            Polymer("ajax-math", {
+                a: "0",
+                b: "0",
+                company_name: "",
+                onGetCompanyNameResponse: function(event, response) {
+                    this.company_name = response.response;
+                }
+            });
+        </script>
+    </polymer-element>
+
+
+Here is another an example API module for doing some math on the Python side of things:
 
 :: 
 
@@ -53,7 +91,7 @@ You can also query any Python script in your environment via Ajax. Example API m
         sum = int(request.POST["a"]) + int(request.POST["b"])
         return sum
 
-Call this example function from a Polymer card:
+Call this example function from a Polymer card.  This AJAX call will not execute until the user clicks the submit button. The **this.$.do_math.go** function triggers the AJAX call.
 
 .. code-block:: html
 
