@@ -6,6 +6,7 @@ API Scripts
 You can quickly create endpoints to your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`folder_structure`. The endpoint is named like so:
 
 ::
+
     api/version/module/function
 
 See Python's `module <https://docs.python.org/2/tutorial/modules.html>`_ documentation. For example a module in your library named form.py with a save() function is available at **your_instance.nebrios.com/api/v1/form/save**. 
