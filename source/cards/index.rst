@@ -128,5 +128,40 @@ Accessing Cards
 Cards are seen in the default home page of your NebriOS admin. They show up automatically there for a number of reasons. Any user that is on your account experiences the same thing, except they see only the cards meant for them. Lastly, cards can be show on your Nebri url (something.nebrios.com) to public users also should you have any publicly accessible cards. 
 
 
-How do you actually get a card to show? Inside of any Rule Script you can call :doc:`../builtins/load_card`. By doing this you send a card to whichever user activated the script which activated load_card().
+How do you actually get a card to show? Inside of any Rule Script you can call :doc:`../builtins/load_card`. By doing this you send a card to whichever user activated the script which activated load_card(). 
+
+A simple method we use while testing is the qa_card_loader.py rule script loading cards for you. Copy this script to your instance:
+
+.. code-block:: html
+
+
+    class qa_card_loader(NebriOS):
+        listens_to = ['qa_card_name', 'pid', 'user']
+    
+        def check(self):
+            return self.qa_card_name
+    
+        def action(self):
+            self.qa_card_loader_status = "Ran at: %s" % datetime.now()
+            
+            if self.pid:
+                self.card_pid = self.pid
+            else:
+                self.card_pid = self.PROCESS_ID
+                
+            if self.user:
+                self.card_user = self.user
+            else:
+                self.card_user = self.last_actor
+                        
+            load_card(self.qa_card_name, pid=self.card_pid, user=self.card_user)
+            
+            
+And enter this in debug mode to load your card:
+
+::
+
+    qa_card_name := example-card
+    
+You will see example-card appear in your home screen, supposing that card exists. 
 
