@@ -1,20 +1,23 @@
-===========
-API Scripts
-===========
+==============
+API Scripts V1
+==============
 
 
-You can quickly create endpoints to your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`folder_structure`. The endpoint is named like so:
+This document describes how to create endpoints in your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`folder_structure`. The endpoint is then reachable with URL structure:
 
 ::
 
-    api/version/module/function
+    api/vX/MODULE/FUNCTION
 
-See Python's `module <https://docs.python.org/2/tutorial/modules.html>`_ documentation. For example a module in your library named form.py with a save() function is available at **your_instance.nebrios.com/api/v1/form/save**. 
+For example a module in your library named **form.py** with a **save()** function is available at 
 
-Consuming API's can happen from these scripts also, or another Python script anywhere in your system. Keys are handled from the user table. Let's get into the details!
+::
 
+    your_instance.nebrios.com/api/v1/form/save
+    
+See Python's `module <https://docs.python.org/2/tutorial/modules.html>`_ documentation. 
 
-Here's an API script that you can use to bind any form fields to an actual KVP. 
+Consuming API's can happen from these scripts also, or another Python script anywhere in your system. Keys are handled from the user table. Here's an API script that you can use to bind any form fields to an actual KVP. 
 
 .. code-block:: python
 
@@ -127,6 +130,24 @@ Call this example function from a Polymer card.  This AJAX call will not execute
             });
         </script>
     </polymer-element>
+    
+    
+Card Loader Built-In
+====================
+
+You can invoke cards by using the card loader built in. It allows signed-in and public users to bring up cards and submit values through them. 
+
+::
+
+    # format
+    api/vX/cards/load?name=NAME
+    
+    # example
+    https://example.nebrios.com/api/v1/cards/load?name=hello-world
+    
+Currently this exposes all your forms potentially to the public. However, submitting KVP's is still subject to :doc:`..admin/acl`. In the future we will be allowing load_card() to be called from any API script, at which point you can program your own rules for protection of forms. 
+
+
 
 
         
