@@ -3,7 +3,7 @@ API Scripts V1
 ==============
 
 
-This document describes how to create endpoints in your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`folder_structure`. The endpoint is then reachable with URL structure:
+This document describes how to create endpoints in your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`../misc/folder_structure`. The endpoint is then reachable with URL structure:
 
 ::
 
@@ -145,7 +145,7 @@ You can invoke cards by using the card loader built in. It allows signed-in and 
     # example
     https://example.nebrios.com/api/v1/cards/load?name=hello-world
     
-Currently this exposes all your forms potentially to the public. However, submitting KVP's is still subject to :doc:`..admin/acl`. In the future we will be allowing load_card() to be called from any API script, at which point you can program your own rules for protection of forms. 
+Currently this exposes all your forms potentially to the public. However, submitting KVP's is still subject to :doc:`../admin/acl`. In the future we will be allowing load_card() to be called from any API script, at which point you can program your own rules for protection of forms. 
 
 
 
