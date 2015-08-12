@@ -46,7 +46,7 @@ The following example card would allow you to save any form field within that ca
 
 
 AJAX Calls
-==========
+**********
 
 You can use AJAX from your Polymer cards to run Nebri API modules. This is useful for grabbing information from within Nebri and displaying it on the fly. For example, an API module can be used to query Shared KVP data needed by the Card. The API module simply needs to "return" whatever information needed.
 
@@ -133,10 +133,10 @@ Call this example function from a Polymer card.  This AJAX call will not execute
     
     
 Built-Ins
-*********
+=========
 
 Card Loader
-===========
+***********
 
 You can invoke cards by using the card loader built in. It allows signed-in and public users to bring up cards and submit values through them. 
 
@@ -152,7 +152,7 @@ Currently this exposes all your forms potentially to the public. However, submit
 
 
 Authentication
-==============
+**************
 
 Within an API you can check if the user who invoked the script is authenticated. 
 
