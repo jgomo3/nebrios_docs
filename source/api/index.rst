@@ -132,8 +132,11 @@ Call this example function from a Polymer card.  This AJAX call will not execute
     </polymer-element>
     
     
-Card Loader Built-In
-====================
+Built-Ins
+*********
+
+Card Loader
+===========
 
 You can invoke cards by using the card loader built in. It allows signed-in and public users to bring up cards and submit values through them. 
 
@@ -145,8 +148,18 @@ You can invoke cards by using the card loader built in. It allows signed-in and 
     # example
     https://example.nebrios.com/api/v1/cards/load?name=hello-world
     
-Currently this exposes all your forms potentially to the public. However, submitting KVP's is still subject to :doc:`../admin/acl`. In the future we will be allowing load_card() to be called from any API script, at which point you can program your own rules for protection of forms. 
+Currently this exposes all your forms potentially to the public. However, submitting KVP's is still subject to :doc:`../admin/acl`. In the future we will be allowing load_card() to be called from any API script, at which point you can program your own rules for protection of forms. Also in the near future we are adding a checkbox for public availability on forms. 
 
+
+Authentication
+**************
+
+Within an API you can check if the user who invoked the script is authenticated. 
+
+::
+
+    if not request.is_authenticated:
+        return HttpResponseForbidden()
 
 
 
