@@ -140,7 +140,7 @@ Card Loader
 
 You can invoke cards by using the card loader built in. It allows signed-in and public users to bring up cards and submit values through them. 
 
-::
+.. code-block:: python
 
     # format
     api/vX/cards/load?name=NAME
@@ -152,11 +152,11 @@ Currently this exposes all your forms potentially to the public. However, submit
 
 
 Authentication
-**************
+==============
 
 Within an API you can check if the user who invoked the script is authenticated. 
 
-::
+.. code-block:: python
 
     if not request.is_authenticated:
         return HttpResponseForbidden()
