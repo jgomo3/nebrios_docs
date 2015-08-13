@@ -18,6 +18,10 @@ Query one or more KVP's by PID or Value.
     p.kvp_b = 456
     p.save()
 
+get_or_create()
+===============
+
+Same as get(), but it creates a PID if it doesn't exist.
 
 create()
 ========
@@ -32,4 +36,20 @@ Create KVP's. This creates a whole new PID. By contrast, when you create KVP's w
         # changes aren't saved until you call this
 
 We will be expanding this create() to include parent and child creation in the future.  It will replace the current parent/child functionality. 
+
+
+filter()
+========
+
+.. code-block:: python
+
+    q = Process.objects.filter(PROCESS_ID=12, kvp_a=123)
+    
+    # supports synthetic queryset
+    # call this an filter the results
+    q2 = q.filter(kvp_b=33)
+    
+
+
+
 
