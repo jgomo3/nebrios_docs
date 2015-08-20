@@ -3,7 +3,9 @@ API Scripts V1
 ==============
 
 
-This document describes how to create endpoints in your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`../misc/folder_structure`. The endpoint is then reachable with URL structure:
+This document describes how to create endpoints in your Nebri instance, or consume other API's with Python scripts. An API endpoint is instantly available by creating a script in the API section of the admin or over ssh. See :doc:`../misc/folder_structure`. You can use the `nebrios-authentication <https://github.com/briem-bixly/nebrios-authentication>`_ library to use both token and basic http autentication. 
+
+Endpoints are then reachable with this URL structure:
 
 ::
 
@@ -148,13 +150,13 @@ You can invoke cards by using the card loader built in. It allows signed-in and 
     # example
     https://example.nebrios.com/api/v1/cards/load?name=hello-world
     
-Currently this exposes all your forms potentially to the public. However, submitting KVP's is still subject to :doc:`../admin/acl`. In the future we will be allowing load_card() to be called from any API script, at which point you can program your own rules for protection of forms. Also in the near future we are adding a checkbox for public availability on forms. 
+Only cards with that are marked at publicaclly avaiable can be reached this way by non-authenticated users. Also, submitting KVP's are still subject to :doc:`../admin/acl`. 
 
 
-Authentication
-**************
+Nebri User Authentication
+*************************
 
-Within an API you can check if the user who invoked the script is authenticated. 
+Within an API you can check if the user who invoked the script is authenticated. This is a simple way to to keep only Nebri users from your instance using a specific endpoint, if that's what you desire. 
 
 .. code-block:: python
 
