@@ -74,8 +74,9 @@ connection which will be accesible from the *Terminal* tool window.
 .. image:: /img/advanced_pycharm/12.png
    :target: /_images/12.png
 
-Finally, let us copy the app to our instance, by right-clicking on the *nebrios_test_app* folder, then clicking on
-*Upload to <instance name>*.
+Finally, let us copy the app to our instance, by right-clicking on the nebrios_test_app folder, then clicking on Upload
+to <instance name>. **Note**: Uploading to your instance is not necessary until folders/files have been added. If you
+would like to follow along, you may refer to the starter `nebrios_test_app <https://github.com/fernandobixly/nebrios_test_app>`_.
 
 .. image:: /img/advanced_pycharm/13.png
    :target: /_images/13.png
