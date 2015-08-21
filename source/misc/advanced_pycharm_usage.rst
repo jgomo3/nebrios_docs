@@ -13,10 +13,12 @@ Project Creation
 Let's start with creating a new `PyCharm <https://www.jetbrains.com/pycharm/>`_ project for our NebriOS app. We shall name our app *nebrios_test_app*.
 
 .. image:: /img/advanced_pycharm/01.png
+   :target: /img/advanced_pycharm/01.png
 
 After creating the project, we should have an empty `PyCharm <https://www.jetbrains.com/pycharm/>`_ project.
 
 .. image:: /img/advanced_pycharm/02.png
+   :target: /img/advanced_pycharm/02.png
 
 SFTP Setup
 ----------
