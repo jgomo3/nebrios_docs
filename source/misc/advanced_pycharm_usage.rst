@@ -74,23 +74,17 @@ Third-party NebriOS Apps
 A NebriOS App is a collection of folders with Python modules, Polymer elements, and other miscellaneous support files
 needed by app in question. Apps have the following file/folder structure:
 
-    - /api
-        - Contains :doc:`../api/index` (Python modules)
+    - /api: Contains :doc:`../api/index` (Python modules)
 
-    - /card_html_files
-        - Contains :doc:`../cards/index` (HTML files)
+    - /card_html_files: Contains :doc:`../cards/index` (HTML files)
 
-    - /libraries
-        - Contains Python modules directly importable by name in *API* or *Rule scripts* (Python Modules)
+    - /libraries: Contains Python modules directly importable by name in *API* or *Rule scripts* (Python Modules)
 
-    - /scripts
-        - Contains :doc:`../rules/index` (Python modules)
+    - /scripts: Contains :doc:`../rules/index` (Python modules)
 
-    - /workspace
-        - Contains miscellaneous files required by the app - files residing in this folder can be opened without specifying a path (ie. for a file named *image.png*, it can be opened in a script by using ``f = open('image.png')``.
+    - /workspace: Contains miscellaneous files required by the app - files residing in this folder can be opened without specifying a path (ie. for a file named *image.png*, it can be opened in a script by using ``f = open('image.png')``.
 
-    - README.md
-        - App documentation
+    - README.md: App documentation
 
 NebriOS Apps do not need to have all of these folders: only folders containing at least one file are required. At
 NebriOS HQ, we have a modest but growing list of free third-party apps, and these usually come in the form of Github
