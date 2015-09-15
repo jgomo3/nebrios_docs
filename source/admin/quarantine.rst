@@ -7,7 +7,7 @@ It gets better! For errors, once the script is updated in any way (probably in h
 
 For time-outs, the script is disabled when the quarantine is created. This way you instance will not break because of one hung script. If you want be made aware of a paused script, you have notification options. 
 
-Notificaiton
+Notification
 ============
 Whenever a quarantine is generated, after the KVP Bag for the Process in question has been rolled back, two KVPs are added to the Process: 
 
