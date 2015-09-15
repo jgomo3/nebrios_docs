@@ -19,6 +19,25 @@ This window uses the same syntax as the debug window for adding KVPS
   
   # check Google Drive for a new spreadsheet
   gdrive_search := xls
+  
+Here some cron examples to get you started also:
+
+::
+  
+  # hourly
+  0 * * * *
+  
+  # daily
+  0 0 * * *
+  
+  # weekly
+  0 0 * * 0
+  
+  # monthly
+  0 0 1 * *
+  
+  # specific day - Jan 3
+  0 0 03 01 *
 
 Related is the :doc:`../builtins/schedule` keyword. Shedules are defined in scripts rather than the admin. They allow you to define a time when the script will wake up and try to run against every PID in the system. Drips on the other hand simply input a KVP on a schedule and the system takes if from there. Related, but very different.
 
