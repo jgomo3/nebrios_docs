@@ -20,6 +20,11 @@ This window uses the same syntax as the debug window for adding KVPS
   # check Google Drive for a new spreadsheet
   gdrive_search := xls
   
+  # multiple lines work too
+  gdrive_search := xls
+  gdrive_search := doc
+  gdrive_search := jpg
+  
 Here some cron examples to get you started also:
 
 ::
