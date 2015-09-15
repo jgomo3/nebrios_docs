@@ -49,6 +49,23 @@ filter()
     # call this an filter the results
     q2 = q.filter(kvp_b=33)
     
+    
+Nebri Models
+============
+Nebri Models (found `here <https://github.com/fernandobixly/nebrios-models>`_) ads the power of models to Nebri. It's a great way to wrap the Process ORM. 
+
+Example usage:
+
+.. code-block:: python
+
+    try:
+        user = User.get(username="testuser")
+        # we can manipulate the object here
+        cars = MyCar.filter(user=user)
+        for car in cars:
+            # We have a list of cars here
+    except:
+        # exception thrown if model not found
 
 
 
