@@ -7,7 +7,9 @@ Simply use cron syntax inside of the schedule variable:
 
 :: 
 
-   schedule = "0 0 * * *" # daily 
+   class check_invoices(NebriOS):
+      schedule = "0 0 * * *" # daily 
+
 
 It replaces **listens_to** and belongs in the top of your script; the :doc:`../rules/registration` area.
 
@@ -24,6 +26,22 @@ Here's a quick reminder of Cron syntax:
     | | --------- Day of month (1 - 31)
     | ----------- Hour (0 - 23)
     ------------- Minute (0 - 59)
+    
+   # hourly
+   schedule = "0 * * * *"
+  
+   # daily
+   schedule = "0 0 * * *"
+   
+   # weekly
+   schedule = "0 0 * * 0"
+   
+   # monthly
+   schedule = "0 0 1 * *"
+   
+   # specific day - Jan 3
+   schedule = "0 0 03 01 *"
+
 
 .. note:: the @monthly/@daily keyword syntax isn't recognized right now
 
