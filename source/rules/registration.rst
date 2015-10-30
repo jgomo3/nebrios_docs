@@ -35,3 +35,4 @@ Schedule
 
 An extremely useful alternative to listens_to is :doc:`../builtins/schedule`. You can define when the script wakes up and acts rather than what it listens to. This is useful in a monitoring situation. For example, every night you want to make sure doors are shut, or nothing is overdue.  
 
+You can use "schedule" and "listen_to" together in the same script. 
