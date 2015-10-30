@@ -14,21 +14,21 @@ This is the listens\_to list.
 .. code-block:: python
 
     class my_class_name(NebriOS):
-        listens_to == ['some_value']
+        listens_to == ['key']
                     
 
-"some\_value" is the KVP that you are telling your system to react to. As an example, let's say we want to watch vacation\_request KVP. That way, if anyone sent in an email to your Nebri OS Inbox with something like "vacation\_request := True", the script would wake up, and try to move on.
+"key" is the Key from a KVP that you are telling your system to react to. As an example, let's say we want to watch vacation\_request KVP. That way, if anyone sent in an email to your Nebri OS Inbox with something like "vacation\_request := True", the script would wake up and run it's check.
 
 Listening to multiple KVPs looks like this:
 
 .. code-block:: python
 
-    listens_to == ['some_value', 'foo', 'bar']
+    listens_to == ['key_A', 'key_B', 'key_C']
                   
 
 If any one of those KVPs were to change, the script would wake up.
 
-.. note:: You can listen to every single KVP using the wild card: listens_to == ['\*'] 
+.. note:: You can listen to every single KVP using the wild card: listens_to == ['\*']. The emphasis here would be on finding values who's keys you don't know. 
 
 Schedule
 ========
