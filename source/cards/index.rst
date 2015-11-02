@@ -4,7 +4,7 @@ Card Scripts
 
 Nebri allows users to spawn UI's quickly with very little code. These UI's are currently in the form of "cards". A card is a `Polymer <https://www.polymer-project.org>`_ element. We chose this route because of Polymers growing momentum, their vast library of elements, and Material Design. 
 
-There are two main routs you can take when creating Polymer elements in Nebri. The quick option is to inherit from nebrio-element and extend it with your own form fields and html. Very little code is needed to create powerful Material Design forms for your users. Many things are done automatically for you when you take this route, such as closing after it has been submitted, validation, and more. 
+There are two main routes you can take when creating Polymer elements in Nebri. The quick option is to inherit from nebrio-element and extend it with your own form fields and html. Very little code is needed to create powerful Material Design forms for your users. Many things are done automatically for you when you take this route, such as closing after it has been submitted, validation, and more. 
 
 Nebri Cards
 ***********
