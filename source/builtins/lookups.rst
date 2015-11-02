@@ -12,14 +12,12 @@ The following lookups are supported
   * __gte: greater than or equal to
   
   
-Whether you are using our `Process ORM <http://nebridocs.readthedocs.org/builtins/process_ORM.html>`_ or `nebrios-models <https://github.com/fernandobixly/nebrios-models>`_, you may use these lookups as you would when using the Django ORM.
+Whether you are using our :doc:`process_ORM` or `nebrios-models <https://github.com/fernandobixly/nebrios-models>`_, you may use these lookups as you would when using the Django ORM.
 
 For your reference, imagining "date_value" is a variable containing one of our datetimes, the following code is now functional:
 
 With Process ORM
 ================
-
-See :doc:`process_ORM`
 
 .. code-block:: python
 
