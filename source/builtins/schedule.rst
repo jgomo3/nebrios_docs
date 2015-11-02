@@ -11,7 +11,7 @@ Simply use cron syntax inside of the schedule variable:
       schedule = "0 0 * * *" # daily 
 
 
-It replaces **listens_to** and belongs in the top of your script; the :doc:`../rules/registration` area.
+It replaces, or is used along with **listens_to**, and belongs in the top of your script, the `../rules/registration` area.
 
 
 Here's a quick reminder of Cron syntax:
