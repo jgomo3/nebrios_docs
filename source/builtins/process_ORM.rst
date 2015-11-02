@@ -66,6 +66,11 @@ Example usage:
             # We have a list of cars here
     except:
         # exception thrown if model not found
+        
+Lookups
+=======
+
+See :doc:`lookups`. 
 
 
 
