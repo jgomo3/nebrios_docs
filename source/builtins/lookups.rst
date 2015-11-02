@@ -19,6 +19,8 @@ For your reference, imagining "date_value" is a variable containing one of our d
 With Process ORM
 ================
 
+See :doc:`process_ORM`
+
 .. code-block:: python
 
   entries = Process.objects.filter(kind="email_message", received_on__gte=date_value)
