@@ -6,9 +6,9 @@ Nebri OS Guide
 
 Nebri is all about the flow of information. It can be between software, people, and anything with an API.  When you need to connect the dots between various agents, Nebri steps in with a minimal UI and a powerful workflow based on rules. It's a paradigm changing approach. Some bullet points to kickstart your project:
 
--  A KVP (Key Value Pair) is the cornerstone data entity. Think of them as models in MVC.
--  Nebri's reaction is based on Python scripts(rules). Like a controller.
--  Results can be seen/changed in your views, which are forms, API's and emails.
+-  :doc:`admin/kvps` are the cornerstone data entity. Everything reacts to KVPs.
+-  Nebri reacts KVP changes with Python :doc:`rules/index`. 
+-  Results can be interacted with in your views (Cards, API's and emails).
 
 
 .. toctree::
