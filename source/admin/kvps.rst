@@ -1,5 +1,5 @@
-Managing KVPs
-~~~~~~~~~~~~~
+KVPs
+~~~~
 
 KVPs are the heart of Nebri OS. No script ever triggers unless a KVP is added or changed. If you were hiring a new employee, and built a process to help that along, you might have the following key/value pairs:
 
