@@ -17,7 +17,7 @@ You can set KVP's at the same time.
 
     def action(self)
         send_email("arron@example.com", "Please submit the form so I can be done with this!")
-        self.arron_notified == True
+        self.arron_notified = True
 
 
 
@@ -27,7 +27,7 @@ Example gtalk plugin
 
     def action(self)
         send_email("arron@example.com", "Please submit the form so I can be done with this!")
-        self.arron_notified == True
+        self.arron_notified = True
         gtalk.send("arron.bixly", """Did you submit the form yet?""")
                  
 
